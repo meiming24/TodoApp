@@ -1,0 +1,81 @@
+.TodoItem {
+    font: 14px 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    color: #4d4d4d;
+    font-size: 24px;
+    font-weight: 300;
+    display: flex;
+    align-items: flex-start;
+    flex-basis: 100%;
+    border: 1px solid rgb(196, 195, 195);
+    transition: 0.4s;
+}
+
+.TodoItem-complete p{
+    opacity: .3;
+    text-decoration: line-through;
+}
+
+.TodoContainer {
+    width: 550px;
+    display: flex;
+    flex-direction: column;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    margin-bottom: 50px;
+}
+
+.TodoItem img {
+    width:24px;
+    height: 24px;
+    margin: 24px;
+    opacity: 1;
+}
+
+.TodoContainer .Footer{
+    padding: 10px;
+    color: #777;
+    display: flex;
+    justify-content: space-between;
+}
+
+.TodoContainer .Footer .Buttons span{
+    padding: 3px 7px;
+    margin: 3px 5px;
+}
+
+.TodoContainer .Footer .Buttons span:hover {
+    border: 0.5px solid black;
+    border-radius: 5px;
+}
+
+.TodoContainer .Footer .Buttons span:active {
+    background-color: rgb(255, 180, 180);
+    border: 0.5px solid rgb(255, 180, 180);
+    color: #fff;
+    border-radius: 5px;
+}
+
+.TodoContainer input {
+    font-size: 24px;
+    padding: 24px;
+    padding-left: 70px;
+}
+
+.TodoContainer .ButtonHeader {
+    position: absolute;
+    opacity: 0.3;
+}
+
+.TodoContainer .ButtonHeader img {
+    width: 24px;
+    padding: 24px;
+}
+
+.TodoContainer input::placeholder {
+    font-style: italic;
+    opacity: .3;
+    margin-left: 30px;
+}
+
+.TodoContainer .Footer .Clear:hover {
+    color: black;
+}
